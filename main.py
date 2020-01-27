@@ -113,7 +113,7 @@ def current_day_visitor_count_svg() -> Response:
         cursor.close()
         conn.close()
 
-    svg = badge(left_text="Visitors in today", right_text=str(new_count), right_color='red`')
+    svg = badge(left_text="Visitors in today", right_text=str(new_count), right_color='red')
 
     expiry_time = datetime.datetime.utcnow() - datetime.timedelta(minutes=10)
 
